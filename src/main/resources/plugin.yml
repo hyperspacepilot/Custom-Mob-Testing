@@ -1,0 +1,7 @@
+name: Custom-Mobs
+version: v1.0.0-beta
+api-version: 1.18
+author: hyperspace_pilot
+main: de.hyper.mobs.domain.CustomMobs
+commands:
+  testmob:

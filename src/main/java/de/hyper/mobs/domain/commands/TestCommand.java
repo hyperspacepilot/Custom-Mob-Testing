@@ -15,7 +15,7 @@ public class TestCommand implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (commandSender instanceof Player player) {
             if (player.hasPermission("admin.admin.test")) {
-                CustomZombie customZombie = new CustomZombie(player.getLocation());
+                CustomZombie customZombie = new CustomZombie("Mutierter Zombie", player.getLocation());
                 ServerLevel serverLevel = ((CraftWorld) player.getWorld()).getHandle();
                 serverLevel.addFreshEntity(customZombie, CreatureSpawnEvent.SpawnReason.CUSTOM);
                 player.sendMessage("sneeens test bestanden");
